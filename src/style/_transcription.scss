@@ -1,0 +1,7 @@
+.paragraphAnimations {
+    transition: all 1s, transform 0.1s;
+}
+
+.paragraphAnimations:hover {
+    transform: scaleX(102%);
+}

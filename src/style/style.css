@@ -31,4 +31,12 @@ body {
   min-height: 100vh;
 }
 
+.paragraphAnimations {
+  transition: all 1s, transform 0.1s;
+}
+
+.paragraphAnimations:hover {
+  transform: scaleX(102%);
+}
+
 /*# sourceMappingURL=style.css.map */
