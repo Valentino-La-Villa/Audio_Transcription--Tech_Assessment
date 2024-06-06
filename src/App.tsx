@@ -28,7 +28,8 @@ function App() {
       <AudioInterfaceSection />
       <TranscriptionSection
       transcription={transcription as MessageInformationObj[]}
-      handleMessageClick={handleMessageClick} />
+      handleMessageClick={handleMessageClick} 
+      currentTimeReference={currentTimeReference}/>
     </main>
   )
 }

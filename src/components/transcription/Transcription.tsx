@@ -4,6 +4,7 @@ import Message from "./Message"
 type PropsType = {
     transcription: MessageInformationObj[]
     handleMessageClick: (timeReference: number)=> void
+    currentTimeReference: number
 }
 
 export default function TranscriptionSection(props: PropsType) {   
@@ -12,7 +13,8 @@ export default function TranscriptionSection(props: PropsType) {
         <Message
         key={message.end}
         message={message}
-        handleMessageClick={props.handleMessageClick} />
+        handleMessageClick={props.handleMessageClick}
+        currentTimeReference={props.currentTimeReference} />
     ))
 
     return (
